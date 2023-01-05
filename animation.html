@@ -3,34 +3,34 @@
 <head>
 <style type="text/css">
 div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  width: 250px;
+  height: 250px;
+  background-color: royalblue;
   animation-name: dance;
-  animation-duration: 4s;
-  position: relative;top: left;
+  animation-duration: 3s;
+  background-size: contain;
+  position: absolute;
+ animation-iteration-count: infinite;
 }
 
 @keyframes dance {
-  0% {background-color: red;
-		top:300px;
- 		left: 200px;
-  }
-  25% {background-color: yellow; }
-  50% {background-color: aliceblue;}
-  75% {background-color: orange;}
-  100% {background-color: bronze;}
-
+  
+  0%  {background-image: url(illusion.jpeg);}
+  25% {background-image: url(illusion2.jpeg);}
+  50% {background-image: url(illusion3.jpeg);}
+  75% {background-image: url(illusion4.jpeg);}
+  100% {background-image: url(illusion5.jpeg);}
+  
 }
 </style>
 </head>
 <body>
 
-<h1>Animation</h1>
+<h1>Illusion</h1>
 
 <div></div>
 
-<p><b>Note:</b> </p>
+<p><b> </b> </p>
 
 </body>
 </html>

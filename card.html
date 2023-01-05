@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		#alec{
+			width: 750px;
+			height: 750px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+
+		}
+	
+	
+	
+	
+	</style>
+
+	<audio id="song"  src="JCBL.mp3"></audio>
+<center><div id=alec></div></center>
+
+<script type="text/javascript">
+	var clicks =0;
+	document.addEventListener("click",
+		function(){
+			clicks = clicks+1
+		console.log(clicks)
+
+		if (clicks%2 == 0){alec.style.
+		backgroundImage="url(https://preview.redd.it/o9lyrq3boye91.jpg?width=640&crop=smart&auto=webp&s=2c1432cb54e3d5cdb14dab2f8b32773894c901dc)";
+		song.play()}
+
+		if (clicks%2 == 1){alec.style.backgroundImage="url(https://img.atlasobscura.com/eSHjEcGZ3EeXY8keN4kgOig8jnB4Lx5frXckO7T7TvQ/rs:fill:780:520:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yNDkx/ZjA0ZGQyNTBiOTM0/ZWRfQ0FOzINPX0NS/SVNUQUxFU1_igJNf/TE9TX09DSE9TXzAx/LmpwZw.jpg)";
+
+		song.play()}
+	})
+</script>
+</body>
+</html>

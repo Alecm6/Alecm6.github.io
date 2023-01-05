@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#box{
+			height: 400px;
+			width: 400px;
+			font-size: 65px;
+			border: 1px solid black
+		}
+	</style>
+</head>
+<body>
+
+<center>
+	<p>  What should I make myself for breakfast today...</p>
+	<div id="box"></div><center></center>
+
+<script type="text/javascript">
+	
+	var breakfastfoods = ["pancakes" , " waffles", " cereal", "bacon egg and cheese", " eggs", " breakfast burrito", "granola", "yogurt"]
+
+	box.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*5);
+		box.style.backgroundImage = "url(" + breakfastfoods[randomNumber] + ")"
+		box.innerText = breakfastfoods[randomNumber];
+		console.log(randomNumber)
+
+
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style type="text/css">
+	.santa{
+		width: 100px;
+		height:  100px;
+		background-image: url(santa.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		display: inline-block;
+	}
+	.santa:hover{
+		background-color: black;
+		transition: 2s;
+		transform: rotate(720deg);
+	}
+</style>
+
+</head>
+
+<body>
+<div id="santa"></div><div></div>
+<script type="text/javascript">
+	
+	function makeSanta() {
+		var santa = document.createElement("div")
+		document.body.appendChild(santa);
+		santa.classlist.add("santa")
+
+		// body...
+	}
+
+		setInterval(makeSanta, 100)
+
+x
+</script>	
+
+
+
+
+</body>
+</html>
