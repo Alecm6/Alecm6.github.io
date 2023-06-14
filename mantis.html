@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		body{
+/*			background-color: rgb();
+*/			
+/*			filter: hue-rotate();
+*/		}
+
+			img{
+				height:400px;
+			width: 600px;
+			}
+	
+		
+	</style>
+
+	
+	
+</head>
+<body>
+
+
+<!-- 	<div id=box><div>
+ -->
+	<img id="cristales" src="cristales1.png">
+	<!-- <img id="cristales" src="cristales2.png"></img>
+	<img id="cristales" src="cristales3.png"></img>
+	<img id="cristales" src="cristales4.png"></img>
+	<img id="cristales" src="cristales5.png"></img> -->
+
+
+	<script type="text/javascript">
+
+		var number = 0;
+
+		cristales.addEventListener("click", 
+			function(){ 
+			number = number+1;
+			cristales.src = "cristales"+ number+".png"
+
+			console.log(cristales.style.backgroundImage);
+			if (number == 5)
+				{ number = 0}
+
+
+
+
+		})
+
+
+
+		document.addEventListener("mousemove",
+			function(event){
+				console.log(event.clientX,event.clientY)
+
+				document.body.style.backgroundColor = "rgb(0,"+ event.clientX + "," + event.clientY +")" 
+			})
+
+
+
+
+
+	</script>
+</body>
+</html>

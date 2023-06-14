@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+		body{
+		background-image: url(f1.png);
+		background-size: cover;
+  		position: absolute;
+  		background-repeat: no-repeat;
+	;
+ 		
+ 		
+		
+	}
+
+		#f1{
+			width: 150px;
+			height: 150px;
+			background-image: url(ferrari.png);
+			position: absolute;
+			background-repeat: no-repeat;
+			background-size: contain;
+			display:inline-block;
+			left: 20px;
+
+		}
+	</style>
+</head>
+<body>
+
+	<div id="f1"></div>
+
+	<script type="text/javascript">
+		f1.style.left = "0px";
+	var x = parseInt(f1.style.left);
+
+		document.addEventListener("keydown", 
+			function(event){
+			console.log(x)
+			x = x+5; 
+			f1.style.left = parseInt(x+10)+"px"
+			
+	
+		})
+
+
+
+	</script>
+
+</body>
+</html>
